@@ -3,7 +3,7 @@
 import request
 import json
 api_Key="**" #Ypur api key from the website
-base_url = "http://api.openweather.org/data/2.5/waether??"
+base_url = "http://api.openweather.org/data/2.5/weather??"
 city_name = input("Enter the city name:")
 complete_url=base_url+"appid="+api_Key+"&q"+city_name
 response=request.get(complete_url)
